@@ -1,0 +1,80 @@
+*{
+	padding:0;
+	margin:0;
+	font-size:1.1em;
+	line-height:1.3em;
+	text-align: center;
+}
+div{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	display:inline-block;
+	float:left;
+	position:static;
+}
+
+.full{
+	width:96%;
+	padding:0.5%;
+	margin:0.5%;
+	background:gray;
+	border:1px solid darkgray;
+}
+
+.half{
+	width:47%;
+	padding:0.5%;
+	margin:0.5%;
+	background:lightyellow;
+	border:1px solid darkgray;
+}
+
+.third{
+	width:30.5%;
+	padding:0.5%;
+	margin:0.5%;
+	background:lime;
+	border:1px solid darkgray;
+}
+
+.quoter{
+	width:22.25%;
+	padding:0.5%;
+	margin:0.5%;
+	background:lightpink;
+	border:1px solid darkgray;
+	min-width: 129px;
+}
+
+@media screen and ( max-width:648px){
+	.half{
+		width:96%;
+		padding:0.5%;
+		margin:0.5%;
+	}
+	.third{
+		width:47%;
+		padding:0.5%;
+		margin:0.5%;
+	}
+	.quoter{
+		width:30.5%;
+		padding:0.5%;
+		margin:0.5%;
+	}
+}
+
+@media screen and ( max-width:440px){
+	.third{
+		width:96%;
+		padding:0.5%;
+		margin:0.5%;
+	}
+	.quoter{
+		width:47%;
+		padding:0.5%;
+		margin:0.5%;
+	}
+}
+
+
