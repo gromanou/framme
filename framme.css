@@ -1,80 +1,176 @@
+/*
+ *  Include this in html header 
+ *  <meta name="viewport" content="initial-scale=1" />
+ */
+
+/*
+ * Unification for my frames
+ */
 *{
 	padding:0;
 	margin:0;
 	font-size:1.1em;
-	line-height:1.3em;
-	text-align: center;
+	line-height:1.3em;	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
 }
 div{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	display:inline-block;
+	border-radius:5px;	
 	float:left;
-	position:static;
+	text-align: center;
+	display:inline-block;
+	position:relative;	
 }
 
-.full{
-	width:96%;
+
+/*
+ *  Just a container 
+ *  can change anything  and should not effect anything 
+ * 
+ */
+
+.container{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+
+/*
+ * Do not change rows 
+ * They ment to be as they are 
+ * Row is a strict wersion of frames that preserve it's size relative to a pare 
+ * In other words td-row will alwats be one third of a page
+ * 
+ */
+
+.row{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.hf-row{
+	width:50%;
+	margin:0;
+	padding:0;
+}
+.tq-row{
+	width:75%;
+	margin:0;
+	padding:0;
+}
+.tth-row{
+	width:66.6666%;
+	margin:0;
+	padding:0;
+}
+.td-row{
+	width:33.333%;
+	margin:0;
+	padding:0;
+}
+.qt-row{
+	width:25%;
+	margin:0;
+	padding:0;
+}
+
+
+/*
+ * Frames would suggest not to change 
+ * 
+ * r-  stands for responsive 
+ *
+ * But if you feel to mess arround , you can always download a fresh copy :) 
+ */
+
+
+.r-full{
+	width:100%;
 	padding:0.5%;
-	margin:0.5%;
-	background:gray;
-	border:1px solid darkgray;
 }
 
-.half{
-	width:47%;
+.r-half{
+	width:50%;
 	padding:0.5%;
-	margin:0.5%;
-	background:lightyellow;
-	border:1px solid darkgray;
 }
 
-.third{
-	width:30.5%;
+.r-twothirds{
+	width:66.666%;
 	padding:0.5%;
-	margin:0.5%;
-	background:lime;
-	border:1px solid darkgray;
 }
-
-.quoter{
-	width:22.25%;
+.r-third-pair{
+	width:33.3333%;
 	padding:0.5%;
-	margin:0.5%;
-	background:lightpink;
-	border:1px solid darkgray;
-	min-width: 129px;
 }
 
+.r-third{
+	width:33.3333%;
+	padding:0.5%;
+}
+
+.r-quoter{
+	width:25%;
+	padding:0.5%;
+}
+
+.r-sixs{
+	width:16.666%;
+	padding:0.5%;
+}
+.r-eights{
+	width:12.5%;
+	padding:0.5%;
+}
+
+
+/*
+ * Thats where sesponcive desig takes it's actions
+ * a) 648px viewport size 
+ * b) 440px viewport size
+ */
 @media screen and ( max-width:648px){
-	.half{
-		width:96%;
-		padding:0.5%;
-		margin:0.5%;
+	.r-half{
+		width:100%;
 	}
-	.third{
-		width:47%;
-		padding:0.5%;
-		margin:0.5%;
+	.r-twothirds{
+		width:100%;
 	}
-	.quoter{
-		width:30.5%;
-		padding:0.5%;
-		margin:0.5%;
+	.r-third-pair{
+		width:100%;
+	}
+	.r-third{
+		width:100%;
+	}
+	.r-quoter{
+		width:50%;
+	}
+	.r-sixs{
+		width:33.3333%;
+	}
+	.r-eights{
+		width:25%;
 	}
 }
 
 @media screen and ( max-width:440px){
-	.third{
-		width:96%;
-		padding:0.5%;
-		margin:0.5%;
+	*{
+		font-size:1.05em;
+		line-height:1.1em;	
 	}
-	.quoter{
-		width:47%;
-		padding:0.5%;
-		margin:0.5%;
+	.r-third{
+		width:100%;
+	}
+	.r-quoter{
+		width:50%;
+	}
+	.r-sixs{
+		width:33.3333%;
+	}
+	.r-eights{
+		width:50%;
 	}
 }
-
-
