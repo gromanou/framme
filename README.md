@@ -1,18 +1,21 @@
-framme
+Framme
 ======
 
-Simple css framework. Little of responsive design together with some % techniques to help make pages without annoying repetitive work.
+I see responcive page design as a present trend
+Here is my attempt to understand it by creatign my own frammework.
+Very simple but effective. 
 
 
-===== To use framme ====== 
 
-1) place following files in to a root folder:
-	framme.css
-	framme-300.css
-2) include this code at the head of a HTML document 
-
+# ===== To use Framme ====== 
+1) Link framework file in a header file.
+Also include following code at the head of a HTML document 
+NOTE: links to .css files should reflect your file hierarchy . 
+```
 <meta name="viewport" content="initial-scale=1" />		
 <link href="framme.css" rel="stylesheet" />
 <link rel="stylesheet" media="all and (min-width: 0px) and (max-width: 440px)" href="framme-300.css">
+```
 
-==========================
+
+
