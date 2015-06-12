@@ -5,50 +5,66 @@
 		<meta name="viewport" content="initial-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href="framme.css" rel="stylesheet" />
-		<link rel="stylesheet" media="all and (min-width: 0px) and (max-width: 440px)" href="framme-300.css">
+		<style type="text/css">
+			body{
+				font-size: 14px;
+			}
+			div{
+				border:1px solid gray;
+				background: #d3d3d3;
+			}
+		</style>
 		<body>
 			
-			<div class="full">
-				
+			<div class="fm-row">
+				Full Row 
 			</div>
-			<div class="full">Wide block</div>
-			<div class="half">half block</div>
-			<div class="half">half block</div>
-			<div class="third">One Tird block</div>
-			<div class="third">One Tird block</div>
-			<div class="third">One Tird block</div>
+			<div class="fm-row">Wide block</div>
+			<div class="fm-half">half block</div>
+			<div class="fm-half">half block</div>
+			<div class="fm-third">One Tird block</div>
+			<div class="fm-third">One Tird block</div>
+			<div class="fm-third">One Tird block</div>
 			
-			<div class="quoter">Quater Block</div>
-			<div class="quoter">Quater Block</div>
-			<div class="quoter">Quater Block</div>
-			<div class="quoter">Quater Block</div>
+			<div class="fm-quoter fm-mobilehide">Mobile Hide</div>
+			<div class="fm-quoter fm-mobilehide">Mobile Hide</div>
+			<div class="fm-quoter fm-mobilehide">Mobile Hide</div>
+			<div class="fm-quoter fm-mobilehide">Mobile Hide</div>
 			
 			
 			
-			<div class="full">
-				<div class="half">Half</div>
-				<div class="half">Half</div>
-			</div>
-			
-			<div class="full" style="text-align: center">
-				<div class="quoter" style="float:left; position:relative; ">quoter</div>
-				<div class="half" style="position:relative;">Half</div>
-				<div class="quoter" style=" position:relative;">quoter</div>
+			<div class="fm-row">
+				<div class="fm-half">Half</div>
+				<div class="fm-half">Half</div>
 			</div>
 			
+			<div class="fm-row" style="text-align: center">
+				<div class="fm-quoter" style="float:left; position:relative; ">quoter</div>
+				<div class="fm-half" style="position:relative;">Half</div>
+				<div class="fm-quoter" style=" position:relative;">quoter</div>
+			</div>
+
+			<div class="fm-spacingrow"></div>			
 			
-			<div class="full">
-				<div class="half">
-					<div class="half">Half</div>
-					<div class="half">half</div>
+			<div class="fm-row">
+				<div class="fm-half">
+					<div class="fm-half">Half of a half </div>
+					<div class="fm-half">Half of a half </div>
 				</div>
-				<div class="half">
-					<div class="third">Third</div>
-					<div class="third">Third</div>
-					<div class="third">Third</div>
+				<div class="fm-half">
+					<div class="fm-third">Third of a half</div>
+					<div class="fm-third">Third of a half</div>
+					<div class="fm-third">Third of a half</div>
+				</div>
+				<div class="fm-row">
+					<div class="fm-threequaters">Three quoters</div>
+					<div class="fm-quoter">Quoter</div>
 				</div>
 			</div>
 			
 		</body>
 	</head>
 </html>
+
+
+
