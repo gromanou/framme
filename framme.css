@@ -1,38 +1,8 @@
+
 /*
  *  Include this in html header 
  *  <meta name="viewport" content="initial-scale=1" />
  */
-
-/*
- * Unification for my frames
- */
-*{
-	padding:0;
-	margin:0;
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box;
-}
-div{
-	float:left;
-	text-align: center;
-	display:inline-block;
-	position:relative;	
-}
-
-
-/*
- *  Just a container 
- *  can change anything  and should not effect anything 
- * 
- */
-
-.container{
-	width:100%;
-	margin:0;
-	padding:0;
-}
-
 
 /*
  * Do not change rows 
@@ -41,35 +11,84 @@ div{
  * 
  */
 
+.fm-spacingrow{
+	width:100%;
+	min-height: 1.5em;
+	content: ' ';
+	margin:0;
+	padding:0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	float:left;
+	display:inline-block;
+	position:relative;	
+}
 .fm-row{
 	width:100%;
 	margin:0;
 	padding:0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	float:left;
+	display:inline-block;
+	position:relative;	
 }
 .fm-half{
 	width:50%;
 	margin:0;
 	padding:0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	float:left;
+	display:inline-block;
+	position:relative;	
 }
 .fm-threequaters{
 	width:75%;
 	margin:0;
 	padding:0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	float:left;
+	display:inline-block;
+	position:relative;	
 }
-.fm-wtothirds{
+.fm-twothirds{
 	width:66.666%;
 	margin:0;
 	padding:0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	float:left;
+	display:inline-block;
+	position:relative;	
 }
 .fm-third{
 	width:33.333%;
 	margin:0;
 	padding:0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	float:left;
+	display:inline-block;
+	position:relative;	
 }
 .fm-quoter{
 	width:25%;
 	margin:0;
 	padding:0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	float:left;
+	display:inline-block;
+	position:relative;	
 }
 
 
